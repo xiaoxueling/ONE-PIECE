@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+	background: #f1f0f7;
+}
+
+.yw_cx {
+	background: #fff;
+	border-radius: 3px;
+	padding: 30px 10px;
+}
+
+.layui-form-item .layui-input-inline {
+	width: 162px;
+	margin-right: 0
+}
+
+.layui-form-label {
+	width: inherit
+}
+
+.layui-table th {
+	font-weight: 700;
+	background: #01AAED;
+	color: #fff;
+	text-align: center;
+}
+
+.layui-table td {
+	text-align: center;
+}
+
+.layui-laypage span {
+	background: none
+}
+
+.layui-laypage .layui-laypage-spr {
+	background: #fff
+}
+/*..弹出框样式..*/
+body .layui-layer-btn a {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+
+body .layui-layer-title {
+	background-color: #01AAED;
+	color: #fff;
+	font-size: 14px;
+}

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+	background: url(../../../images/login/u959.png) no-repeat;
+	background-size: 100% auto;
+}
+
+.Login {
+	width: 100%;
+	height: 320px;
+	background-color: rgba(215, 215, 215, 0.5);
+	top: 50%;
+	position: fixed;
+	margin-top: -160px;
+}
+
+.login_c {
+	width: 300px;
+	margin: 50px auto;
+}
+
+.login_c ul li {
+	margin-top: 10px;
+}
+
+.login_c ul li input {
+	border: none;
+	font-size: 14px;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+}
+
+.login_c ul li h2 {
+	text-align: center;
+	/* font-size: 16px; */
+}
+
+.login_c ul li .dl_tu {
+	border-radius: 5px;
+	text-indent: 50px;
+}
+
+.login_c ul li .dl_tu1 {
+	background: url(../../../images/login/u13.png) no-repeat 10px #fff;
+	background-size: 24px 32px;
+}
+
+.login_c ul li .dl_tu2 {
+	background: url(../../../images/login/u11.png) no-repeat 10px #fff;
+	background-size: 32px 32px;
+}
+
+.login_c ul li .dl_an {
+	background-color: rgba(247, 92, 76, 1);
+	font-size: 23px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}

@@ -1,0 +1,513 @@
+*{margin:0;padding:0;line-height:100%;font-family:'微软雅黑';
+box-sizing:content-box !important;
+-moz-box-sizing:content-box !important; /* Firefox */
+-webkit-box-sizing:content-box !important; /* Safari */
+}
+a{text-decoration:none;}
+ul li,ol li{list-style:none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}
+i,em{font-style:normal;}
+
+.clearfix:after{content:'';display:block;clear:both;}
+.clearfix{zoom:1;}
+.clear{ clear:both;}
+a:link, a:visited, a:active {text-decoration:none; color:#333;}
+a:hover {color: #333; }
+a {cursor: pointer; }
+input {outline: none;}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+.set_process {
+	width: 850px;
+	margin: 0 auto;
+}
+.navbar {
+	width: 100%;
+	height: 38px;
+	background: #0287d0;
+}
+.navbar h1 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 38px;
+	text-indent: 10px;
+}
+.set_process_con {
+	width: 805px;
+	height: 612px;
+	margin: 0 auto;
+	background: #fff;
+}
+.set_process_con h3 {
+	font-size: 14px;
+	color: #949494;
+	line-height: 30px;
+}
+.set_process_con hr {
+	border: none;
+    border-top: 1px dotted #a1a1a1;
+    margin-top: 130px;
+}
+.select_process {
+	width: 158px;
+	height: 65px;
+	background: #d7d7d7;
+	color: #515151;
+	border: none;
+	font-weight: 700;
+	margin-top: 5px;
+}
+.para {
+	color: #949494;
+	font-size: 14px;
+	line-height: 30px;
+}
+.edit {
+	width: 804px;
+	min-height: 241px;
+	padding-bottom: 20px;
+	border: 1px #949494 solid;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #949494;
+	position: relative;	
+}
+.edit textarea {
+	width: 100%;
+	height: 241px;
+	text-align: center;
+	line-height: 241px;
+	border: none;
+	background: transparent;
+	outline: none;
+	resize: none;
+	/*display: none;*/
+}
+.edit>div {
+	display: none;
+	padding: 20px;
+}
+.IDCard input {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.IDCard p {
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+}
+.delDom {
+	width: 114px;
+	height: 38px;
+	display: block;
+	background: #ff3300;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: none;
+}
+.select_pre.on{
+	background: #ff6632;
+	cursor: pointer;
+	width: 160px;
+	height: 60px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 5px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: "宋体";
+}
+/*按钮*/
+#sure{
+	width:300px;
+	height: 44px;
+	border: none;
+	background: #0287D1;
+	margin-left: 100px;
+	border-radius: 2px;
+	margin-top: 70px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: "宋体";
+}
+#cancel{
+	background: #a1a1a1;
+	width:300px;
+	height: 44px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 70px;
+	margin-left: 15px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: "宋体";
+}
+/*添加节点*/
+.floor{
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,0.3);
+	width: 850px;
+	height: 650px;
+}
+.select{
+	background: #FFFFFF;
+	width: 470px;
+	height: 350px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 130px;
+}
+.fl_header span{
+	font-size: 14px;
+	color: #4c4c4c;
+	line-height: 35px;
+	margin-left: 12px;
+}
+.close1{
+	width: 14px;
+	height: 13px;
+	margin: 10px 10px 0 0;
+}
+.option {
+	text-align: center;
+	padding-top: 30px;
+}
+.option1{
+	width: 125px;
+	height: 50px;
+	border: none;
+	background: #919191;
+	color: #1a1a1a;
+	font-size: 16px;
+	margin: 10px 0;
+	/*margin: 40px 0px 0px 70px;*/
+	cursor: pointer;
+}
+.back{
+	width: 305px;
+	height: 40px;
+	background: #169bd5;
+	border: none;
+	margin: 40px 0 0 0;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 16px;
+	cursor: pointer;
+}
+.none{
+	display: none;
+}
+.selected1 , .selected2 , .selected3 , .selected4 , .selected5 , .selected6 {
+	position:absolute;
+	margin-left: -25px;
+	margin-top:35px;
+}
+/*.selected2{
+	position:absolute;
+	margin-left: -25px;
+	margin-top:35px;
+}
+.selected3{
+	position:absolute;
+	margin-left: -25px;
+	margin-top:35px;
+}
+.selected4{
+	position:absolute;
+	margin-left: -25px;
+	margin-top:35px;
+}*/
+.feechoose span {
+	font-size: 14px;
+	color: #5e5e5e;
+	line-height: 35px;
+}
+.feechoose span input {
+	margin: 0 5px 0 10px;
+}
+.add {
+	width: 65px;
+	height: 25px;
+	border: none;
+	background: #169bd5;
+	color: #fff;
+	font-size: 14px;
+	line-height: 25px;
+	cursor: pointer;
+}
+.payment P {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.payment input[type=text] {
+	margin-left: 10px;
+}
+.address_choose {
+	padding: 0 0 0 20px !important;
+}
+.address_choose label {
+	margin-right: 20px;
+	font-size: 14px;
+	color: #333;
+	line-height: 35px;
+}
+.address_choose label input {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.area {
+	background: #f2f2f2;
+	width: 600px;
+	height: 70px;
+	line-height: 70px;
+}
+.area span {
+	font-size: 14px;
+	color: #868686;
+	margin-left: 20px;
+}
+.setarea {
+	width: 65px;
+	height: 28px;
+	display: inline-block;
+	margin-left: 20px;
+	background: #0099ff;
+	line-height: 28px;
+	text-align: center;
+	color: #fff !important;
+	font-size: 12px;
+}
+.province {
+	color: #333;
+}
+.province i {
+	color: #0099ff;
+}
+.areatabcon>div {
+	display: none;
+}
+.storelist {
+	margin-top: 10px;
+}
+.storelist h5 {
+	text-align: center;
+	width: 267px;
+	height: 23px;
+	background: #d7d7d7;
+	line-height: 23px;
+}
+.storelist>div {
+	width: 265px;
+	height: 150px;
+	overflow: hidden;
+}
+.storelist>div {
+	border: 1px #333 solid;
+}
+.storelist>div select {
+	height: 150px;
+	overflow-y:scroll;
+	width: 100%;
+}
+.storelist>div select option {
+	font-size: 13px;
+	color: #000;
+	line-height: 20px;
+	cursor: pointer;
+}
+.storelist>div ul option:hover {
+	background: #d7d7d7;
+}
+.change_btn {
+	width: 15px;
+	margin: 10px 30px 0;
+	height: 175px;
+}
+.change_btn a {
+	width: 15px;
+	height: 26px;
+	display: block;
+	margin: 30px 0;
+}
+.ads_store_info hr {
+	width: 737px;
+	margin: 10px 0 !important;
+	border-top: 1px #333 solid;
+}
+.reconfirm p span {
+	width: 190px;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+	color: #333;
+	line-height: 35px;
+}
+.reconfirm p input[type="text"] {
+	margin: 0 10px;
+	width: 300px;
+	height: 25px;
+}
+.reconfirm p label {
+	font-size: 13px;
+	color: #333;
+}
+.reconfirm p label input {
+	margin-right: 5px;
+}
+
+
+.doms.domCK {
+    background-color: red;
+}
+/*选择区域*/
+.area_select {
+	width: 644px;
+	height: 444px;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -322px;
+	margin-top: -222px;
+	border: 1px #ccc solid;
+	z-index: 100;
+	display: none;
+}
+.area_select h2 {
+	font-size: 16px;
+	line-height: 40px;
+	border-bottom: 1px #ccc solid;
+	font-weight: 700;
+	text-indent: 20px;
+	color: #333;
+}
+.arealist {
+	padding: 0 10px;
+}
+.arealist>div {
+	border-bottom: 1px #ccc dotted;
+	min-height: 32px;
+	line-height: 32px;
+}
+.arealist>div:nth-child(even) {
+	background: #f8f8f8;
+}
+.arealist>div>span {
+	display: inline-block;
+	width: 20%;
+}
+.arealist>div>div {
+	width: 80%;
+}
+.arealist>div div span {
+	width: 20%;
+	float: left;
+	display: inline-block;
+	position: relative;
+	text-indent: 10px;
+}
+.arealist>div div span.selected {
+	width: 19.5%;
+	height: 30px;
+	background: #FFFEC6;
+	border: 1px #F8E6A8 solid;
+	/*border-bottom: 1px #FFFEC6 solid;*/
+}
+.arealist>div>span label , .arealist>div div span label {
+	font-size: 13px;
+	color: #333;
+	line-height: 32px;
+}
+.arealist>div>span label {
+	font-weight: bold;
+}
+.arealist>div div span i {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: url(../img/down.png) no-repeat;
+	/*margin: 8px 0 0 5px;*/
+	margin-left: 3px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.arealist>div span label input {
+	vertical-align: middle;
+	margin-right: 2px;
+}
+.btn {
+	height: auto;
+	text-align: center;
+	background: transparent !important;
+	border: none !important;
+}
+.btn input {
+	width: 50px;
+	height: 25px;
+	margin: 20px auto;
+	border: 1px #ccc solid;
+	font-size: 12px;
+	background: #f5f5f5;
+	color: #333;
+	cursor: pointer;
+}
+.btn input.btnconfirm {
+	background: #5BB75B;
+	color: #fff;
+}
+.citylist {
+	padding: 0 10px;
+	width: 222px !important;
+	padding-bottom: 10px;
+	background: #FFFEC6;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	border: 1px #F8E6A8 solid;
+	z-index: 1000;
+	display: none;
+}
+.citylist label {
+	float: left;
+	text-indent: 0;
+	margin-right: 8px;
+}
+.closecity {
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #fff !important;
+	float: right;
+	background: #FAA732;
+	border: 1px #E39C36 solid;
+}
+.shade {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
+}

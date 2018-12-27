@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="payDao" >
+	<!-- 根据orderNo从paylog中取出对应记录 -->
+	<select id="selPaylog" resultType="hashmap" parameterType="String">
+		select * from paylog where orderNo=#{_parameter}
+	</select>
+	<!-- 修改状态信息 -->
+	<update id="updateStatus" parameterType="hashmap">
+		update paylog set status=1 where source=#{source} and sourceId=#{sourceId} and payer=#{userId}
+	</update>
+</mapper>

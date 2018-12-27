@@ -1,0 +1,124 @@
+
+.kc_top{ width:100%; height:88px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) ; overflow:hidden;}
+img.tx_img{width:58px; height:58px; float:left; margin:15px 25px;}
+.kc_top p{ margin-top:14px; font-size:16px; line-height:30px; float:left;}
+.kc_top p .p1{ color:#1EBC61}
+.kc_top p .p2{ color:#C9C9C9}
+.kc_top .wfb_biao{ float:left; display:inline-block; margin:30px 0 0 50px; width:50px; height:20px; background-color: rgba(255, 153, 0, 1); font-size:12px; color:#fff; border-radius:5px; text-align:center; line-height:20px; }
+.kc_left{ position: fixed; top:100px; left:6px; width:238px; height:100%;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) ; border:1px solid #f2f2f2}
+.kc_left ul li h3{ line-height:30px; font-size:14px; text-indent:15px; color:#A1A1A1;}
+.kc_left ul li a{ display:block; height:38px; line-height:38px; border-left:3px solid #fff; text-indent:40px;}
+.kc_left ul li a:hover,.kc_left ul li a.on{ border-left:3px solid #1ebc61}
+.kc_center{ padding-left:278px; margin-top:12px; padding-right:10px;}
+.kc_nr h2{ font-size:14px; line-height:48px; border-bottom:1px solid #d7d7d7;}
+.kc_nr td{ padding:14px 8px; font-size:14px;}
+.kc_nr td .in1{ width:548px; height:30px; line-height:30px; font-size:14px; text-indent:10px; border:1px solid #d7d7d7}
+.kc_nr td p{ color:#A1A1A1}
+.kc_nr td select{ width:148px; height:30px; line-height:30px; font-size:14px; border:1px solid #d7d7d7}
+.kc_nr td .czg_biao,.kc_nr td .xyb_biao{ width:150px; height:32px; color:#fff; font-size:14px; border:none; margin:0 10px;  background:#0099ff}
+.kc_nr td .xyb_biao{ background:#1ebc61}
+
+/*...出版计划....*/
+.cbjh{ margin:20px 60px;}
+.dkyx_jbxx{ border:1px solid #ccc; border-radius:8px; background:#fff; margin:20px auto 40px; position:relative; padding-bottom:20px;}
+.dkyx_jbxx h3{ font-size:16px; font-weight:700; background:#fff; width:148px; height:38px; line-height:38px; text-align:center; position:absolute; top:-20px; left:30px; border-radius:6px;}
+.dkyx_jbxx table{ margin:20px auto 0;}
+.dkyx_jbxx td{ padding:10px; font-size:16px; color:#333}
+.dkcp_t1{ border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; padding:8px 0}
+.dkcp_t1 td{ font-size:14px; line-height:30px; color:#4c4c4c; padding:4px 0}
+.dkcp_t1 td .in1{ width:160px; height:22px; line-height:22px; text-indent:10px;}
+.dkcp_t1 td .in2{ width:40px;}
+.dkcp_t1 td em { color:#f00}
+.dky_hf{ margin:20px auto;}
+.dky_hf .qx_biao,.dky_hf .qr_biao{ width:200px; height:40px; border-radius:6px; color:#fff; font-size:16px; border: none; display:block; margin:0 auto;}
+.dky_hf .qr_biao{ background:#1ebd60}
+
+/*...创建图书期刊....*/
+.cjts{  margin:10px auto;}
+.cjts_top{width:618px;height:34px; margin:0 auto; }
+.cjts_top ul li{ float:left; }
+.cjts_top ul li a{ display:inline-block; width:125px; height:34px; text-align:center; font-size:14px; color:#000; background:#949494; line-height:34px;}
+.cjts_top ul li a.on,.cjts_top ul li a:hover{ background:#0099ff; color:#fff;}
+.cjts_top ul li img{ width:32px; height:32px; margin:2px;}
+.cjts_di{ width:616px; height:auto; margin:44px auto 0; border:1px solid #949494; border-radius:5px; padding:14px 0; overflow:hidden;}
+.cjts_xc{ width:528px; margin:0 auto;}
+.cjts_nr{ width:162px; height:170px;overflow:auto; float:left; margin:10px 6px; border:1px solid #a9a9a9;}
+.cjts_nr ul li{ line-height:17px;}
+.cjts_nr ul li.on{ background:#a8a8a8}
+.zx_nr{ width:496px; height:31px; line-height:31px; font-size:14px; background-color: rgba(255, 204, 102, 1); border:1px solid #ff9900; color:#fff; padding:0 10px; margin:0 auto;}
+.xyb_nr{ width:306px; height:40px; border-radius:5px; border:none; font-size:14px; color:#fff; display:block; margin:20px auto 0; background:#1ebd60;cursor: pointer;}
+.xyb_nr[disabled]{ background:#a8a8a8; cursor: default;}
+.txxx{width: 985px;height: 1056px; overflow-y:auto; margin:10px auto;}
+.txxx td{ padding:4px 8px; font-size:14px;}
+.txxx td.td1{ background:#f2f2f2;}
+.txxx td em{ color:#f00}
+.txxx td span{ font-size:12px; color:#999;}
+.txxx td .in1{ height:23px; line-height:23px; text-indent:10px; font-size:14px;}
+.txxx td textarea{ width:770px; height:253px; margin:20px auto;}
+.txxx td select{ height:23px;}
+.txxx td .tp_sc{ background:url(../images/u5091.png) no-repeat center; width:152px; height:127px; border-radius:5px; border:1px solid #d7d7d7; margin:20px;}
+.xxk1{ float:left;}
+.hide{ display:none;}
+.xxk1 ul li,.xxk2 ul li{ float:left; width:62px; height:25px; line-height:25px; text-align:center; font-size:13px; background:#a8a8a8}
+.xxk1 ul li.on,.xxk2 ul li.on{background:#1ebd60; color:#fff; font-weight:700}
+.det_content2{ float:left; margin-left:20px;}
+.txxx td .rl_in{ background:url(../images/u5152.png) no-repeat 88px -4px #fff;}
+.sptp{ width:710px; height:auto; margin:26px auto;}
+.sptp td{padding:4px 8px; font-size:14px;}
+.sptp td.td1{ background:#f2f2f2;}
+.tpnr{ width:122px; height:auto; margin:0 auto;}
+.tpnr .mrt{ padding:4px; border:1px solid #f5f5f5; width:112px; height:112px;}
+.px{ width:120px; height:28px; margin-top:8px; border:1px solid #e6e6e6;}
+.px span{ float:left; width:59px; display:block; line-height:28px; border-right:1px solid #e6e6e6; font-size:14px; text-indent:4px; color:#999999}
+.px span em{ color:#777777}
+.px .sc_biao{ width:60px; height:28px; border:none; background:url(../images/zc_biao.gif) no-repeat 8px #f5f5f5; color:#666666; font-size:14px; text-indent:25px; float:left;}
+.zt_nr{ width:120px; height:120px; border:1px solid #28b779}
+.zt_nr p{ margin:16px 0 0 8px; font-size:14px; color:#28b779}
+.zt_nr p img{ float:left; margin:5px 4px 0 0}
+/*...期刊 - 发货.....*/
+.qkfh{ margin:20px;}
+.dfh{ border:1px solid #ccc; border-radius:8px; background:#fff; margin:20px auto 40px; position:relative; padding-bottom:20px;}
+.dfh h3{ font-size:16px; font-weight:700; background:#fff; width:148px; height:38px; line-height:38px; text-align:center; position:absolute; top:-20px; left:30px; border-radius:6px;}
+.dfh_nr{ margin:20px 20px 10px;}
+.dfh_nr ul li{ float:left; width:88px; text-align:center; margin:0 10px;}
+.dfh_nr ul li p{ font-size:14px; line-height:20px;}
+.dfh_nr ul li a{ display:inline-block;background-color: rgba(148, 148, 148, 1); width:83px; height:25px;border-radius: 5px; line-height:25px;color:#fff;}
+/*....2018-03-23修改.....*/
+.dfh_nr ul li.xz_nr p{ color:#0099FF}
+.dfh_nr ul li.xz_nr a{background-color:#0099FF; color:#fff; }
+.dfh_nr ul li{ position:relative;}
+.dfh_nr ul li img.xz_biao{ position:absolute; top:0; right:6px; display:none;}
+/*..........*/
+
+.grxx{background-color: rgba(228, 228, 228, 1); padding:5px 10px;}
+.grxx table{ border:1px solid #949494; margin:8px 0; background:#fff;}
+.grxx td{ padding:8px; font-size:14px;}
+.grxx td input{ height:21px; line-height:21px; padding:0 8px; font-size:14px;}
+.grxx td select{ height:25px; line-height:25px; padding:0 8px; font-size:14px;}
+.grxx td button{background-color: rgba(0, 153, 255, 1);    width: 88px;
+    height: 25px; color:#fff; border:none; font-size:13px; font-weight:700}
+.qrsh_biao{width:377px; height:40px; border-radius:6px; color:#fff; font-size:16px; border: none; display:block; margin:26px auto 0; background:#1ebd60}
+.bz_nr h3{ font-size:14px; line-height:60px;}
+.bz_nr h3 span{ margin-right:10px; color:#FF9900}
+.ddxx{ border:1px solid #e4e4e4;}
+.ddxx h4{background-color: rgba(242, 242, 242, 1); height:38px; line-height:38px;color:#A1A1A1; font-size:13px; padding:0 10px;border-bottom:1px solid #e4e4e4}
+.dd_xx{ width:48%; float:left;height:148px; padding:10px; border-right:1px solid #e4e4e4}
+.dd_xx img{ float:left; margin-right:30px;}
+.dd_xx p{ font-size:14px; line-height:24px;}
+.dd_xx p span{ color:#0099FF}
+.dd_xx1{ width:48%; float:left; height:148px; padding:10px; }
+.dd_xx1 td{ padding:8px 2px; color:#A1A1A1; font-size:14px;}
+.dd_xx1 td textarea{    width: 423px;
+    height: 63px; padding:5px;}
+.dd_sh{ padding:0 10px; font-size:14px; color:#797979; height:38px; line-height:38px;border-top:1px solid #e4e4e4}
+.dd_sh span{ color:#A1A1A1; font-size:13px;}
+.dd_sh img{ float:right; margin-top:6px;}
+.hywl{width: 100%;height: 38px;background-color: rgba(223, 241, 217, 1); line-height:38px; font-size:13px; color:#00CC66; text-indent:12px;}
+.hywl span{ color:#CC9933;}
+.tx_xx td{ font-size:14px; padding:10px 8px;}
+.tx_xx td input{ height:21px; line-height:21px; padding:0 8px; font-size:14px;}
+.tx_xx td select{ height:25px; line-height:25px; padding:0 8px; font-size:14px;}
+/*...2018-05-10设置-分成......*/
+.fc_nr{    border-bottom: 1px solid #ccc;padding-bottom:20px; font-size:14px}
+.fc_nr .in1{width:35px;height:22px;text-align:center;font-size:14px;line-height:22px;}
+.fc_nr span{ display: inline-block;width:25px;height:26px;background-color: rgba(215, 215, 215, 1);text-align:center; line-height:25px; font-size:14px; margin-left:-3px; margin-top:-1px;}

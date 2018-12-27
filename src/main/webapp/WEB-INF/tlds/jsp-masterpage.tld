@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>1.1</jspversion>
+    <shortname>bean</shortname>
+    <uri>cn.core.masterpage</uri>
+    <tag>
+        <name>Content</name>
+        <tagclass>cn.core.master.ContentTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>contentPlaceHolderId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>ContentPlaceHolder</name>
+        <tagclass>cn.core.master.ContentPlaceHolderTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>MasterPage</name>
+        <tagclass>cn.core.master.MasterPageTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>id</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>ContentPage</name>
+        <tagclass>cn.core.master.ContentPageTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>materPageId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
+

@@ -1,0 +1,19 @@
+
+.kc_top{ width:100%; height:88px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) ; overflow:hidden;}
+img.tx_img{width:58px; height:58px; float:left; margin:15px 25px;}
+.kc_top p{ margin-top:14px; font-size:16px; line-height:30px; float:left;}
+.kc_top p .p1{ color:#1EBC61}
+.kc_top p .p2{ color:#C9C9C9}
+.kc_top .wfb_biao{ float:left; display:inline-block; margin:30px 0 0 50px; width:50px; height:20px; background-color: rgba(255, 153, 0, 1); font-size:12px; color:#fff; border-radius:5px; text-align:center; line-height:20px; }
+.kc_left{ position: fixed; top:100px; left:6px; width:238px; height:100%;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) ; border:1px solid #f2f2f2}
+.kc_left ul li h3{ line-height:30px; font-size:14px; text-indent:15px; color:#A1A1A1;}
+.kc_left ul li a{ display:block; height:38px; line-height:38px; border-left:3px solid #fff; text-indent:40px;}
+.kc_left ul li a:hover,.kc_left ul li a.on{ border-left:3px solid #1ebc61}
+.kc_center{ padding-left:278px; margin-top:12px; padding-right:10px;}
+.kc_nr h2{ font-size:14px; line-height:48px; border-bottom:1px solid #d7d7d7;}
+.kc_nr td{ padding:14px 8px; font-size:14px;}
+.kc_nr td .in1{ width:548px; height:30px; line-height:30px; font-size:14px; text-indent:10px; border:1px solid #d7d7d7}
+.kc_nr td p{ color:#A1A1A1}
+.kc_nr td select{ width:148px; height:30px; line-height:30px; font-size:14px; border:1px solid #d7d7d7}
+.kc_nr td .czg_biao,.kc_nr td .xyb_biao{ width:150px; height:32px; color:#fff; font-size:14px; border:none; margin:0 10px;  background:#0099ff}
+.kc_nr td .xyb_biao{ background:#1ebc61}

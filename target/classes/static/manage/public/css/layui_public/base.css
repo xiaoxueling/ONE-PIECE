@@ -1,0 +1,15 @@
+*{margin:0;padding:0;line-height:100%;font-family:'微软雅黑';}
+a{text-decoration:none;}
+ul li,ol li{list-style:none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}
+i,em{font-style:normal;}
+img{vertical-align:top;}
+
+.clearfix:after{content:'';display:block;clear:both;}
+.clearfix{zoom:1;}
+.clear{ clear:both;}
+a:link, a:visited, a:active {text-decoration:none; color:#333;}
+a:hover {color: #333; }
+a {cursor: pointer; }
+table { border-collapse: collapse; border-spacing: 0; }
+body{ background: #f7f7f7;}

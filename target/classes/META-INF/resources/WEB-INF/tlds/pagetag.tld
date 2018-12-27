@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>      
+<taglib>  
+    <tlib-version>1.0</tlib-version><!-- 标签库版本 -->  
+    <jsp-version>1.2</jsp-version>  <!-- 标签库要求的JSP规范版本 -->  
+    <short-name>bean</short-name>   <!-- JSP页面编写工具可以用来创建助记名的可选名字 -->  
+    <uri>cn.core.page</uri>
+    <tag> 
+        <name>Page</name>  
+        <tag-class>cn.core.PageTag</tag-class>  
+        <body-content>JSP</body-content>
+        <dynamic-attributes>true</dynamic-attributes>
+        <attribute>
+		   <name>page</name>
+		   <required>true</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>*页码数据</description>
+		</attribute>
+		<attribute>
+		   <name>url</name>
+		   <required>true</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>*请求的页面地址</description>
+		</attribute>
+        <attribute>  
+            <name>tempName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>jsp模板页面名称</description>  
+        </attribute>
+        <attribute>
+		   <name>currentIndex</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>当前page索引（应用于同一页面多个page时）</description>
+		</attribute>
+		<attribute>
+		   <name>pageParameter</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>当前页码的参数名(默认 page)</description>
+		</attribute>
+		<attribute>
+		   <name>pageInfoPosition</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>当前页和总页数信息显示位置Left/Right (默认 Left)</description>
+		</attribute>
+		<attribute>
+		   <name>className</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>分页应用的class名称（默认 pager）</description>
+		</attribute>
+		<attribute>
+		   <name>showFirstLastLink</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示首页、尾页链接 (默认 true)</description> 
+		</attribute>
+		<attribute>
+		   <name>showPrevNextLink</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示上一页、下一页链接（默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>showNumberLink</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示数字按钮（默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>numberLinkCount</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>数字按钮数量（默认 5）</description> 
+		</attribute>
+		<attribute>
+		   <name>showOmitNumberLink</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示省略的数字按钮（默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>showOnlyPage</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>当总页数小于2页时是否显示（默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>showNoDataInfo</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示无数据提示信息（默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>showTotalRecord</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示总记录数</description> 
+		</attribute>
+		<attribute>
+		   <name>showPageInfo</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示当前页数和总页数信息</description> 
+		</attribute>
+		<attribute>
+		   <name>showGoInput</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否显示GoTo输入区域 （默认 true）</description> 
+		</attribute>
+		<attribute>
+		   <name>ajaxPager</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否创建为ajax分页控件</description> 
+		</attribute>
+		<attribute>
+		   <name>ajaxUpdateTargetId</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>ajax提交后更新的html元素id</description> 
+		</attribute>
+		<attribute>
+		   <name>ajaxSuccessFunctionName</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>ajax提交后调用的js function名称</description> 
+		</attribute>
+		<attribute>
+		   <name>ajaxUpdateTargetId</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>Ajax提交后更新的html元素id</description> 
+		</attribute>
+		<attribute>
+		   <name>enableSelectPageSize</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>是否可以更改每页数量</description> 
+		</attribute>
+		<attribute>
+		   <name>pageSizeArray</name>
+		   <required>false</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <description>每页数量数据(默认{10, 20, 50, 100})</description> 
+		</attribute>
+    </tag>  
+</taglib>
