@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.HashMap;
@@ -18,20 +16,23 @@ import java.util.TreeMap;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import com.alibaba.druid.support.logging.Log;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 
 /**
  * 数据转化
  */
 public class DataConvert {
 
-	private final static char[] cHex={ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+	private  static final Logger  log=LoggerFactory.getLogger(DataConvert.class);
 	
+	private  static final char[] cHex={ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+
 	/**
 	 * ToString
 	 * 
@@ -217,18 +218,17 @@ public class DataConvert {
 	public static<T extends Object>String objectToJson(T obj){
 		String jsonStr="";
 		try {
-			if(obj==null) {
-				return jsonStr;
-			}
-			if(Collection.class.isAssignableFrom(obj.getClass())||obj instanceof Collection<?>) {
-				JSONArray jsonArray=JSONArray.fromObject(obj);
-				jsonStr=jsonArray.toString();
-			}else {
-				JSONObject jsonObject =JSONObject.fromObject(obj);
-				jsonStr=jsonObject.toString();
+			try {
+				if(obj==null) {
+					return jsonStr;
+				}
+				ObjectMapper objectMapper = new ObjectMapper();
+				jsonStr=objectMapper.writeValueAsString(obj);
+			} catch (Exception e) {
+				jsonStr=JSON.toJSONString(obj);
 			}
 		} catch (Exception e) {
-			jsonStr=JSON.toJSONString(obj);
+			e.printStackTrace();
 		}
 		return jsonStr;
 	}
@@ -255,7 +255,7 @@ public class DataConvert {
 			try {
 				object = objectMapper.readValue(jsonStr, c);
 			} catch (IOException e) {
-				e.printStackTrace();
+				object=JSON.parseObject(jsonStr, c);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -273,9 +273,13 @@ public class DataConvert {
 	public static Map<String, Object> JsonToMap(String json) {
 		Map<String, Object> map = null;
 		try {
-			ObjectMapper objectMapper = new ObjectMapper();
-			map = objectMapper.readValue(json, HashMap.class);
-		} catch (IOException e) {
+			try {
+				ObjectMapper objectMapper = new ObjectMapper();
+				map = objectMapper.readValue(json, HashMap.class);
+			} catch (IOException e) {
+				map =JSON.parseObject(json, HashMap.class);
+			}
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return map;
@@ -342,7 +346,7 @@ public class DataConvert {
 				method.invoke(entity, ele.getText());
 			}
 		} catch (Exception e) {
-			System.out.println("xml 格式异常: "+ strXml);
+			log.error("xml 格式异常: "+ strXml);
 			e.printStackTrace();
 		}
 		return entity;
