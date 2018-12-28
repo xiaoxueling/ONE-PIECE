@@ -8,7 +8,7 @@
         	<!-- 过滤日志级别 -->
              <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>  
             <!--输出日志的格式-->
-            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level %class{36} %L %M - %msg%xEx%n"/>  
+            <PatternLayout pattern="%highlight{[ONE-PIECE] [%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level %class{36} %L %M - %msg%xEx%n}"/>
         </console>
         
         <!--处理DEBUG级别的日志，并把该日志放到logs/debug.log文件中-->  
@@ -99,6 +99,7 @@
         </logger>
         
         <!--log4j2 自带过滤日志-->  
+        <logger name="org.hibernate" level="INFO"/>
         <logger name="org.springframework" level="INFO" />
         <logger name="org.mybatis" level="INFO"/>
      	<logger name="springfox.documentation" level="WARN" />
