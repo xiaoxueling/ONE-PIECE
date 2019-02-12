@@ -24,6 +24,7 @@ public class JwtUtil {
 
     /**
      * token私钥
+     * TODO 该密钥越复杂越好
      */
     private static final String TOKEN_SECRET = "sdfa09asdf979a7g0a98f0q308s0df";
 
